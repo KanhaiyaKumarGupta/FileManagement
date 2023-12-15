@@ -13,4 +13,5 @@ func FileRoutes(router *gin.Engine) {
 	router.GET("/downloadfiles", controllers.DownloadFile())
 	router.GET("/fetchtransactions", controllers.FetchTransactions())
 	router.DELETE("/deletefiles", controllers.DeleteFile())
+	router.GET("/listallfiles", controllers.ListFiles())
 }
